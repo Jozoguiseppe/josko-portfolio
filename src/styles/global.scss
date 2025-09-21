@@ -1,0 +1,15 @@
+@use './_tokens.scss' as *;
+*{box-sizing:border-box} html,body,#root{height:100%}
+html{background:var(--bg); color:var(--fg)}
+body{margin:0; font-family:$font-body; -webkit-font-smoothing:antialiased}
+a,button{color:inherit}
+.wrap{max-width:$wrap; margin-inline:auto; padding-inline:clamp(16px,5vw,32px)}
+.btn{display:inline-flex; gap:.6rem; padding:.9rem 1.2rem; border-radius:var(--radius);
+  background:linear-gradient(90deg,var(--accent),var(--accent-cyan)); color:#0b0c1a; font-weight:700;
+  border:1px solid rgba(255,255,255,.12); box-shadow:var(--shadow-neon); text-decoration:none;
+  transition:.2s; &:hover{transform:translateY(-2px)} &:focus-visible{outline:2px solid var(--accent-cyan)}}
+.kicker{letter-spacing:.28em; text-transform:uppercase; color:var(--accent-cyan); font-weight:600; font-size:.85rem}
+.h1{font-family:$font-heading; font-size:var(--h1); line-height:.95; margin:.6rem 0 1rem; text-shadow:var(--shadow-neon)}
+.lead{color:var(--muted); font-size:var(--lead); max-width:62ch}
+.section{min-height:100vh; display:flex; align-items:center; position:relative}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}

@@ -1,0 +1,18 @@
+:root{
+  --bg:#0b0c1a; --fg:#f4f7ff; --accent:#d84bff; --accent-cyan:#3cf7ff; --muted:#9aa3b2;
+  --radius:14px; --shadow-neon:0 0 18px rgba(216,75,255,.6),0 0 46px rgba(60,247,255,.25);
+  --h1:clamp(36px,7vw,88px); --lead:clamp(16px,2.3vw,22px);
+
+  /* extras used by layout */
+  --container: 1200px; /* matches $wrap */
+  --gap: 24px;
+}
+
+$wrap:1200px; $font-heading:'Orbitron',system-ui,sans-serif; $font-body:'Inter',system-ui,sans-serif;
+
+@media (prefers-reduced-motion: no-preference) {
+  :root { --transition-fast: 160ms; --transition-slow: 360ms; }
+}
+@media (prefers-reduced-motion: reduce) {
+  :root { --transition-fast: 0ms; --transition-slow: 0ms; }
+}
