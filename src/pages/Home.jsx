@@ -163,13 +163,12 @@ export default function Home(){
           <h2 className="h1" style={{fontSize:'clamp(28px,4vw,44px)', textAlign: 'center', marginBottom: '48px'}}>Why Choose Me?</h2>
           <div className="services four-columns">
             {[
-              {icon: '🚀', title: 'Performance-first', desc: 'Fast, reliable, and optimized for every device.'},
-              {icon: '🎨', title: 'Design that converts', desc: 'Beautiful, clear, and user-focused.'},
-              {icon: '⚡', title: 'Modern tech stack', desc: 'Built with today\'s best tools and practices.'},
-              {icon: '🤝', title: 'Collaborative approach', desc: 'I bring your vision to life, step by step.'}
+              {title: 'Performance-first', desc: 'Fast, reliable, and optimized for every device.'},
+              {title: 'Design that converts', desc: 'Beautiful, clear, and user-focused.'},
+              {title: 'Modern tech stack', desc: 'Built with today\'s best tools and practices.'},
+              {title: 'Collaborative approach', desc: 'I bring your vision to life, step by step.'}
             ].map((item,i)=>(
               <div className="service" key={i} style={{textAlign: 'center'}}>
-                <div style={{fontSize: '32px', marginBottom: '16px'}}>{item.icon}</div>
                 <h3 style={{marginTop:0, color: 'var(--accent-cyan)'}}>{item.title}</h3>
                 <p style={{color:'var(--muted)', lineHeight: 1.6}}>{item.desc}</p>
               </div>
